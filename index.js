@@ -46,6 +46,8 @@ const init = async () => {
 
         const fileContent = generateMarkdown(answerData);
 
+        console.log("Here is the data!", fileContent);
+
         await writeToFile("./output/README.md", fileContent);
 
         console.log("A new README file has been created in the output folder.");
